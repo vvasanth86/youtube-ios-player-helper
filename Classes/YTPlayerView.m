@@ -818,6 +818,8 @@ NSString static *const kYTPlayerStaticProxyRegexPattern = @"^https://content.goo
   webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
   webView.scrollView.scrollEnabled = NO;
   webView.scrollView.bounces = NO;
+  webView.opaque = false;
+  webView.backgroundColor = self.backgroundColor;
   return webView;
 }
 
